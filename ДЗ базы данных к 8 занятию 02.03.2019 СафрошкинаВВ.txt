@@ -1,0 +1,17 @@
+«апросы в текстовом файле отправьте в ваш репозиторий, мне отправьте ссылку на draftpodium@gmail.com
+ƒл€ зачета достаточно первых 4 запросов, п€тый предлагаю выполнить, чтобы убедитьс€ в своем мастерстве обращени€ с базами данных
+
+Ќапишите запрос, который выведет все записи из таблицы Products
+SELECT * FROM test.Products;
+
+Ќапишите запрос, который выведет только те записи из таблицы Products, в которых цена (product_price) больше 4
+SELECT prod_name, prod_price FROM test.Products WHERE prod_price > 4;
+
+Ќапишите запрос, которые вернет только те записи из таблицы Customers, в которых cust_name Ќ≈ равно Fun4All
+SELECT * FROM test.Customers WHERE cust_name != 'Fun4All';
+
+Ќапишите запрос, который вернет все записи из таблицы OrderItems, отсортированные по уменьшению цены
+SELECT * FROM test.OrderItems ORDER BY item_price DESC;
+
+5*  Ќапишите запрос, добавл€ющий новую запись в таблицу Products. ƒанные можно использовать произвольные. ќбратите внимание, что поставщик (vend_id) может быть только уже существующий.
+INSERT INTO test.Products (prod_id, vend_id, prod_name, prod_price, prod_desc) VALUES ('QWERTY', 'DLL01', 'Fish', '100', 'Sea');
